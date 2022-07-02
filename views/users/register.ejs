@@ -1,0 +1,31 @@
+<% layout('layout/boilerplate') %> 
+<div class="container d-flex justify-content-center align-items-center ">
+    <div class="row flex-fill">
+        <div class="col-md-5 offset-md-3">
+            <div class="card shadow mb-3">
+                <img src="https://images.unsplash.com/photo-1455763916899-e8b50eca9967?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2FtcHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Register</h5>
+                    <form action="/register" class="validated-form" method="post" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" type="text" id="username" name="username" required autofocus></input>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-control" type="email" id="email" name="email" required></input>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required></input>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <button class="btn btn-success col-12">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
